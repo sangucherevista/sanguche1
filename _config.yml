@@ -1,0 +1,7 @@
+
+---
+
+permalink: /:categories/:title/
+
+excerpt_separator: <!--more-->
+---

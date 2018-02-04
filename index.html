@@ -1,0 +1,37 @@
+---
+layout: default
+title: SÁNGUCHE Revista
+---
+<div class="container">
+
+
+  <div class="row">
+
+      {% for post in site.posts %}
+      <a href="{{ post.url }}"><div class="column">
+        <div ="textimage">
+          <img src="{{ post.img }}">
+          <div class="topleft">{{ post.categories }}</div>
+        </div>
+        <h3>{{ post.title }}</h3>
+        <p class="date">
+          {{ post.date | date: '%d %B, %Y' }}
+        </p>
+        {{ post.content | strip_html | truncatewords:20 }}
+      </div></a>
+      {% endfor %}
+
+  </div>
+</div>
+<div class="center">
+  <div class="pagination">
+    <a href="p">&laquo;</a>
+    <a class="active" href="/">1</a>
+    <a href="/2/">2</a>
+    <a href="/3/">3</a>
+    <a href="/4/">4</a>
+    <a href="/5/">5</a>
+    <a href="/6/">6</a>
+    <a href="n">&raquo;</a>
+  </div>
+</div>
