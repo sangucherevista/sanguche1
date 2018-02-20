@@ -35,7 +35,7 @@ opacity: 0.8;
 header,
 footer,
 #top, #bottom, #left, #right {
-  background: rgba(256,52,52,0.8);
+  background: #965251;
 }
 
 header a,
